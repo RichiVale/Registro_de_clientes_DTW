@@ -1,0 +1,51 @@
+<!-- navegacion/navegacion.html -->
+<style>
+    .navbar {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px;
+        padding: 14px 18px;
+        margin: 0 0 24px;
+        background: #243447;
+        border-radius: 8px;
+        box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .navbar a {
+        color: #ffffff;
+        text-decoration: none;
+        padding: 9px 12px;
+        border-radius: 6px;
+        font-size: 15px;
+        font-weight: 600;
+        transition: background-color 0.2s ease, color 0.2s ease;
+    }
+
+    .navbar a:hover {
+        background: #f2c94c;
+        color: #1f2933;
+    }
+
+    @media (max-width: 600px) {
+        .navbar {
+            flex-direction: column;
+            align-items: stretch;
+        }
+
+        .navbar a {
+            text-align: center;
+        }
+    }
+</style>
+
+<div class="navbar">
+    <a href="../menu/index.html">Inicio</a>
+    <a href="../ordenar/index.html">Ordenar</a>
+    <a href="../clientes/index.html">Clientes</a>
+    <a href="../pendiente-ticket/index.html">Pedidos Pendientes</a>
+    <a href="../entregado-ticket/index.html">Pedidos Entregados</a>
+    <a href="../pedidos-borrados/index.html">Pedidos Borrados</a>
+    <a href="../estadisticas/index.html">Estadisticas</a>
+</div>

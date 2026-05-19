@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pupuseria - Administrar Pupusas</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="administrar.js"></script>
+    <style>
+       
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Administrar Pupusas</h1>
+
+        <div id="navegacion"></div>
+        <script src="../navegacion/cargarNavegacion.js"></script>
+
+        <div class="form-section">
+            <h2>Formulario de Pupusa</h2>
+            <input type="hidden" id="editId">
+            <div>
+                <input type="text" id="nombrePupusa" placeholder="Nombre de la pupusa" required>
+            </div>
+            <div>
+                <input type="number" id="precioPupusa" placeholder="Precio" step="0.01" value="0.35" required>
+            </div>
+            <div>
+                <button onclick="guardarPupusa()">Guardar</button>
+                <button onclick="limpiarFormulario()">Limpiar</button>
+            </div>
+        </div>
+
+        <div class="table-section">
+            <h2>Lista de Pupusas Disponibles</h2>
+            <table border="1" id="tablaPupusas">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Precio</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="cuerpoTabla"></tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
