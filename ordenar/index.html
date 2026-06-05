@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pupuseria - Tomar Pedido</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="ordenar.js"></script>
+    <style>
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Tomar Pedido</h1>
+
+        <div id="navegacion"></div>
+        <script src="../navegacion/cargarNavegacion.js"></script>
+        <br>
+
+        <div class="form-cliente">
+            <h2>Datos del Cliente</h2>
+            <label>
+                Nombre
+                <input type="text" id="nombreCliente" placeholder="Nombre del cliente">
+            </label>
+            <label>
+                Numero de celular
+                <input type="tel" id="telefonoCliente" placeholder="8 digitos" maxlength="8">
+            </label>
+            <label class="delivery-toggle">
+                <input type="checkbox" id="esDelivery">
+                Pedido por delivery
+            </label>
+            <div id="camposDelivery" hidden>
+                <label>
+                    Direccion
+                    <input type="text" id="direccionCliente" placeholder="Direccion de entrega">
+                </label>
+                <label>
+                    Correo
+                    <input type="email" id="correoCliente" placeholder="correo@ejemplo.com">
+                </label>
+                <label>
+                    Punto de referencia
+                    <input type="text" id="referenciaCliente" placeholder="Casa, negocio o senal cercana">
+                </label>
+            </div>
+        </div>
+
+        <table border="1" id="tablaPedido">
+            <thead>
+                <tr>
+                    <th>Pupusas</th>
+                    <th>Subtotal</th>
+                    <th>Cantidad</th>
+                </tr>
+            </thead>
+            <tbody id="cuerpoPedido"></tbody>
+        </table>
+
+        <div class="footer-controls">
+            <button onclick="reiniciarPedido()">REINICIAR</button>
+            <div>
+                <strong>TOTAL: $<span id="total">0.00</span></strong>
+            </div>
+            <button onclick="confirmarPedido()" id="confirmarBtn">CONFIRMAR PEDIDO</button>
+        </div>
+    </div>
+</body>
+</html>
