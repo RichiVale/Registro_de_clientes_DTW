@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pupuseria - Clientes</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="clientes.js"></script>
+    <style>
+  
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Clientes</h1>
+
+        <div id="navegacion"></div>
+        <script src="../navegacion/cargarNavegacion.js"></script>
+        <br>
+
+        <div class="resumen-clientes">
+            <h2>Resumen de clientes</h2>
+            <p><strong>Total clientes:</strong> <span id="totalClientes">0</span></p>
+            <p><strong>Cliente que mas gasto:</strong> <span id="clienteMasGasto">Ninguno</span></p>
+        </div>
+
+        <div class="editor-cliente">
+            <h2>Editar Cliente</h2>
+            <input type="hidden" id="telefonoOriginal">
+            <div>
+                <input type="text" id="nombreCliente" placeholder="Nombre">
+                <input type="tel" id="telefonoCliente" placeholder="Celular de 8 digitos" maxlength="8">
+                <input type="email" id="correoCliente" placeholder="Correo">
+                <input type="text" id="direccionCliente" placeholder="Direccion">
+                <input type="text" id="referenciaCliente" placeholder="Punto de referencia">
+            </div>
+            <div>
+                <button onclick="guardarEdicionCliente()">Guardar Cambios</button>
+                <button onclick="limpiarFormularioCliente()">Cancelar</button>
+            </div>
+        </div>
+
+        <div class="table-section">
+            <h2>Listado de Clientes</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Celular</th>
+                        <th>Correo</th>
+                        <th>Direccion</th>
+                        <th>Total Gastado</th>
+                        <th>Ultimo Pedido</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="cuerpoClientes"></tbody>
+            </table>
+        </div>
+
+        <div class="pedidos-cliente">
+            <h2>Pedidos del Cliente</h2>
+            <div id="pedidosCliente" class="ticket-container">
+                <p>Seleccione un cliente para ver sus pedidos.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
