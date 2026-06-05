@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pupuseria - Pedidos Entregados</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="entregado.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Pedidos Entregados</h1>
+
+        <div id="navegacion"></div>
+        <script src="../navegacion/cargarNavegacion.js"></script>
+
+        <div class="resumen-entregados" id="resumenEntregados">
+            Total de pedidos entregados: <span id="totalPedidos">0</span> |
+            Total General: $<span id="totalRecaudado">0.00</span>
+        </div>
+
+        <div id="listaEntregados" class="ticket-container">
+            <p class="no-pedidos">Cargando pedidos...</p>
+        </div>
+    </div>
+</body>
+</html>
