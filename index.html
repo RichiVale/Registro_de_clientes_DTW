@@ -1,12 +1,89 @@
-<!-- index.html en la raíz -->
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
     <meta charset="UTF-8">
-    <title>Pupusería </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Inicio de Sesión</title>
+
+    <link rel="stylesheet" href="css/login.css">
+
 </head>
+
 <body>
-    <h1> Bienvenido a Pupusería</h1>
-    <a href="menu/index.html">➡ Entrar al Sistema</a>
+
+<header>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Flag_of_El_Salvador.svg"
+         alt="Bandera">
+
+    <h1>
+        UNIVERSIDAD DE EL SALVADOR - FACULTAD DE INGENIERÍA
+    </h1>
+
+</header>
+
+
+<main>
+
+<form id="loginForm" class="login">
+
+<h2>BIENVENIDO A TU CUENTA</h2>
+
+<div class="input">
+
+<span>👤</span>
+
+<input
+type="text"
+id="usuario"
+placeholder="Usuario o Correo Electrónico">
+
+</div>
+
+<div class="input">
+
+<span>🔒</span>
+
+<input
+type="password"
+id="password"
+placeholder="Contraseña">
+
+</div>
+
+<a href="#" class="olvido">
+¿Olvidaste tu contraseña?
+</a>
+
+<button type="submit">
+
+INICIAR SESIÓN →
+
+</button>
+
+<hr>
+
+<p>
+
+¿No tienes cuenta?
+
+<a href="#">
+
+Regístrate Aquí
+
+</a>
+
+</p>
+
+</form>
+
+</main>
+
+<script src="js/login.js"></script>
+
 </body>
+
 </html>
