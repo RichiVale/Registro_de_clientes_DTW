@@ -1,0 +1,29 @@
+
+        .panel-estadisticas {
+            background: white;
+            border: 1px solid #d0d7de;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            padding: 16px;
+        }
+
+        .panel-estadisticas p {
+            margin: 8px 0;
+        }
+
+        .panel-estadisticas table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        .panel-estadisticas th,
+        .panel-estadisticas td {
+            border: 1px solid #d0d7de;
+            padding: 8px;
+            text-align: left;
+        }
+
+        .panel-estadisticas th {
+            background: #243447;
+            color: white;
+        }
