@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pupuseria - Estadisticas</title>
+      <link rel="stylesheet" href="estilo.css">
+    <script src="estadisticas.js"></script>
+    <style>
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Estadisticas</h1>
+
+        <div id="navegacion"></div>
+        <script src="../navegacion/cargarNavegacion.js"></script>
+        <br>
+
+        <div class="panel-estadisticas">
+            <h2>Resumen de Ventas</h2>
+            <p><strong>Total de Registros:</strong> <span id="totalRegistros">0</span></p>
+            <p><strong>Pedidos Pendientes:</strong> <span id="totalPendientes">0</span></p>
+            <p><strong>Pedidos Entregados:</strong> <span id="totalEntregados">0</span></p>
+            <p><strong>Total Vendido:</strong> $<span id="totalVendido">0.00</span></p>
+            <p><strong>Total Pupusas Vendidas:</strong> <span id="totalPupusasVendidas">0</span></p>
+            <p><strong>Pupusa Mas Vendida:</strong> <span id="pupusaMasVendida">Ninguna</span></p>
+            <p><strong>Cantidad de la mas vendida:</strong> <span id="cantidadMasVendida">0</span></p>
+        </div>
+
+        <div class="panel-estadisticas">
+            <h2>Datos de Ubicacion y API REST</h2>
+            <p><strong>Estado:</strong> <span id="estadoApi">Cargando ubicacion...</span></p>
+            <p><strong>Latitud:</strong> <span id="latitud">N/A</span></p>
+            <p><strong>Longitud:</strong> <span id="longitud">N/A</span></p>
+            <p><strong>Temperatura actual:</strong> <span id="temperaturaActual">N/A</span></p>
+            <p><strong>Codigo del clima:</strong> <span id="codigoClima">N/A</span></p>
+        </div>
+
+        <div class="panel-estadisticas">
+            <h2>Ventas por Pupusa</h2>
+            <table border="1" id="tablaVentas">
+                <thead>
+                    <tr>
+                        <th>Pupusa</th>
+                        <th>Cantidad Vendida</th>
+                        <th>Total Generado</th>
+                    </tr>
+                </thead>
+                <tbody id="cuerpoTablaVentas">
+                    <tr>
+                        <td colspan="3">Cargando datos...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
