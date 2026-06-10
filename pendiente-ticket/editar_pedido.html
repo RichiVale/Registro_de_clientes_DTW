@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pupusería - Editar Pedido</title>
+    <style>
+    </style>
+        <script src="editar_pedido.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Editar Pedido</h1>
+    
+        <!-- Aquí se cargará la navegación externa -->
+        <div id="navegacion"></div>
+        <script src="../navegacion/cargarNavegacion.js"></script>
+
+<br>
+
+
+        <!-- Barra de navegación -->
+        <div id="navegacion"></div>
+
+        <div class="info-cliente">
+            <div class="campo-cliente">
+                <label>Cliente:</label>
+                <input type="text" id="clienteNombre" placeholder="Nombre del cliente">
+            </div>
+            <div class="campo-cliente">
+                <label>Teléfono:</label>
+                <input type="text" id="clienteTelefono" placeholder="Número de teléfono (8 dígitos)">
+            </div>
+            <div class="campo-cliente">
+                <label>Fecha:</label>
+                <span id="fechaPedido"></span>
+            </div>
+        </div>
+
+        <br>
+        <!-- Tabla de edición -->
+        <table id="tablaEdicion" border="1">
+            <thead>
+                <tr>
+                    <th>Pupusa</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th>Subtotal</th>
+                </tr>
+            </thead>
+            <tbody id="cuerpoEdicion">
+            </tbody>
+        </table>
+
+        <div class="total-pedido">
+            <strong>Total del pedido: $<span id="totalPedido">0.00</span></strong>
+        </div>
+
+        <div>
+            <button class="btn-guardar" onclick="guardarCambios()">Guardar Cambios</button>
+            <button class="btn-cancelar" onclick="cancelarEdicion()">Cancelar</button>
+        </div>
+    </div>
+
+
+    
+    <script>
+     
+    </script>
+</body>
+</html>

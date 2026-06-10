@@ -6,18 +6,16 @@ formulario.addEventListener("submit", function (e) {
 
     const usuario = document.getElementById("usuario").value.trim();
 
-    const password = document.getElementById("password").value.trim();
+    if (usuario === "") {
 
-    if (usuario === "" || password === "") {
-
-        alert("Complete todos los campos.");
+        alert("Escribe un nombre de usuario.");
 
         return;
 
     }
 
-    // Simulación de inicio de sesión correcto
+    alert("Bienvenido, " + usuario);
 
-    window.location.href = "menu/index.html";
+    window.location.href = "../menu/index.html";
 
 });

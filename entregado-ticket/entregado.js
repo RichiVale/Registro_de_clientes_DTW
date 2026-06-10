@@ -15,7 +15,7 @@
             totalRecaudadoSpan.textContent = totalRecaudado.toFixed(2);
             
             if (pedidos.length === 0) {
-                container.innerHTML = '<p class="no-pedidos">ðŸ“­ No hay pedidos entregados</p>';
+                container.innerHTML = '<p class="no-pedidos">No hay pedidos entregados</p>';
                 return;
             }
             
@@ -101,7 +101,7 @@
 
         // Restaurar pedido entregado a la lista de pendientes
         function restaurarPedido(id) {
-            if (confirm('Â¿Restaurar este pedido a pendientes?')) {
+            if (confirm('¿Restaurar este pedido a pendientes?')) {
                 let entregados = JSON.parse(localStorage.getItem('pedidos_entregados') || '[]');
                 let pendientes = JSON.parse(localStorage.getItem('pedidos_pendientes') || '[]');
 
